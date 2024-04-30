@@ -1,0 +1,10 @@
+jupyter
+ipykernel
+git+https://github.com/cvnlab/GLMsingle.git
+pandas
+matplotlib
+pybids
+fire
+torch
+git+https://github.com/openai/CLIP.git
+fracridge

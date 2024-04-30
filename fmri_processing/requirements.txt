@@ -1,0 +1,6 @@
+dcm2niix
+numpy
+scipy
+tensorflow
+pandas
+nilearn

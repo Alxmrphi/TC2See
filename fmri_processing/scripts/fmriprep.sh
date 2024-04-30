@@ -1,0 +1,4 @@
+#fmriprep-docker ../results/TC2See/ ../results/derivatives_TC2See/ participant --participant-label 05  -w work/ --output-spaces MNI152NLin2009cAsym T1w --fs-license-file license.txt
+#fmriprep-docker ../results/TC2See/ ../results/derivatives_TC2See/ participant --participant-label 06  -w work/ --output-spaces MNI152NLin2009cAsym T1w --fs-license-file license.txt
+# fmriprep-docker ../results/TC2See/ ../results/derivatives_TC2See/ participant --participant-label 08  -w work/ --output-spaces MNI152NLin2009cAsym T1w --fs-license-file license.txt
+fmriprep-docker ../results/TC2See/ ../results/derivatives_TC2See/ participant --participant-label 25  -w work/ --output-spaces MNI152NLin2009cAsym T1w --fs-license-file license.txt

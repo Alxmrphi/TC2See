@@ -1,0 +1,1 @@
+docker run --rm -v E:/fmri_processing/results/TC2See:/data:ro -v E:/fmri_processing/results:/out -v E:/fmri_processing/scripts:/license -e FS_LICENSE=/license/license.txt -e FREESURFER_HOME=/opt/freesurfer nipreps/fmriprep /data /out/derivatives_TC2See_new participant --participant-label 25 -w /out/derivatives_TC2See_new_work --output-spaces MNI152NLin2009cAsym T1w
