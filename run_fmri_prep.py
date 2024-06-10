@@ -3,7 +3,7 @@ import subprocess
 from subprocess import Popen, PIPE
 
 excluded_subs = [13]
-subs = [num for num in range(33, 35) if num not in excluded_subs]
+subs = [num for num in range(35,40 ) if num not in excluded_subs]
 participants = [ '0' + str(num) if num < 10 else str(num) for num in subs]
 
 def execute(cmd):
