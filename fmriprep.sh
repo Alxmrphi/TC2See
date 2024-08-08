@@ -30,7 +30,7 @@ cp ${project}/fmriprep_24.0.0.sif $SLURM_TMPDIR/image
 cp ${project}/license.txt $SLURM_TMPDIR/license
 
 apptainer run  --cleanenv \
--B $SLURM_TMPDIR/raw_data/results/TC2See:/raw \  # Input data. Should contain one folder per participant.
+-B $SLURM_TMPDIR/raw_data/results/TC2See:/raw \  # Input data. Should contain one folder per participant ("sub-01").
 -B $SLURM_TMPDIR/sub_${sub_num}_out:/output \    # Output location.
 -B $SLURM_TMPDIR/work_dir:/work_dir \
 -B $SLURM_TMPDIR/image:/image \
