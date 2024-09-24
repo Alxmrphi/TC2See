@@ -16,8 +16,9 @@ tmp_folder = "E:/fmri_processing/results/__tmp3__"
 output_folder = "E:/fmri_processing/results"
 
 project = "TC2See"
+participants = ["35"]
 
-for participant in ["35"]:
+for participant in participants:
     sub = participant
 
     base_folder = f"E:/fmri_processing/data/{project}_{sub}"
