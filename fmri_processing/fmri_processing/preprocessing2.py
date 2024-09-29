@@ -16,6 +16,10 @@ def convert_dicom(folder, tmp_folder, regex_runs, regex_anat, throw_away_trs=5):
 			os.system("curl -fLO https://github.com/rordenlab/dcm2niix/releases/latest/download/dcm2niix_lnx.zip")
 			os.system("unzip dcm2niix_lnx.zip")
 			os.system("rm dcm2niix_lnx.zip")
+		elif sys.platform.startswith('darwin'):  # For macOS
+			os.system("curl -fLO https://github.com/rordenlab/dcm2niix/releases/latest/download/dcm2niix_mac.zip")
+			os.system("unzip dcm2niix_mac.zip")
+			os.system("rm dcm2niix_mac.zip")
 		else:
 			os.system("curl -fLO https://github.com/rordenlab/dcm2niix/releases/latest/download/dcm2niix_win.zip")
 			os.system("tar -a -c -f dcm2niix_win.zip *.FileExt")
@@ -70,10 +74,10 @@ def convert_dicom(folder, tmp_folder, regex_runs, regex_anat, throw_away_trs=5):
 		for from_file, to_file in rename_pairs:
 			shutil.move(from_file, to_file)
 		# sub-1_task-bird_run-1_bold
-		if sys.platform.startswith('linux'):
+		if sys.platform.startswith('linux') or sys.platform.startswith('darwin'):
 			os.system(f'./dcm2niix -f "%i_%p" -p y -z y -o "{target}" "{folder.absolute()}"')
 		else:
-			os.system(f'E:/fmri_processing/scripts/dcm2niix.exe -f "%i_%p" -p y -z y -o "{target}" "{folder.absolute()}"')
+			os.system(f"/Users/jamesmckinnon/Documents/Representations_Lab/Bird_Data_Analysis/TC2See/fmri_processing/scripts/dcm2niix.exe" + f' -f "%i_%p" -p y -z y -o "{target}" "{folder.absolute()}"')
 
 def copy_nii_to_project(tmp_folder, project, sub, outputfolder):
 	# iterate over the folders
