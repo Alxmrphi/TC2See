@@ -8,21 +8,21 @@ import pandas as pd
 import numpy as np
 import shutil
 
-sys.path.append("E:/fmri_processing")
-
+sys.path.append("/Users/jamesmckinnon/Documents/Representations_Lab/Bird_Data_Analysis/TC2See/fmri_processing")
 from fmri_processing.preprocessing2 import convert_dicom, copy_nii_to_project, process_tsv_files
 
-tmp_folder = "E:/fmri_processing/results/__tmp3__"
-output_folder = "E:/fmri_processing/results"
+root_dir = Path("/Users/jamesmckinnon/Documents/Representations_Lab/Bird_Data_Analysis/TC2See")
+tmp_folder = root_dir / "fmri_processing/results/__tmp3__"
+output_folder = root_dir / "fmri_processing/results"
 
 project = "TC2See"
-participants = ["35"]
+participants = ["40"]
 
 for participant in participants:
     sub = participant
 
-    base_folder = f"E:/fmri_processing/data/{project}_{sub}"
-    recordings = base_folder + "/study"
+    base_folder = root_dir / f"fmri_processing/data/{project}_{sub}"
+    recordings = base_folder / "study"
     regex_runs = r".*Run(\d)_(.*)_\d*"
     regex_anat = r"t1_mprage_sag_p2_iso1.0(?:_\d*)?"
 
