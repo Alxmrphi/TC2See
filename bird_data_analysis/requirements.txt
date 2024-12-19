@@ -1,0 +1,16 @@
+distlib @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/distlib/distlib-0.3.8
+filelock @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/filelock/filelock-3.13.4
+flit_core @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/flit_core/flit_core-3.9.0
+hatch-vcs @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/hatch_vcs/hatch_vcs-0.4.0
+hatchling @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/hatchling/hatchling-1.24.2
+packaging @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/packaging/packaging-24.0
+pathspec @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/pathspec/pathspec-0.12.1
+platformdirs @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/platformdirs/platformdirs-4.2.0
+pluggy @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/pluggy/pluggy-1.5.0
+setuptools @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/setuptools/setuptools-70.0.0
+setuptools-scm @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/setuptoolsscm/setuptools-scm-8.0.4
+tomli @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/tomli/tomli-2.0.1
+trove-classifiers @ file:///cvmfs/soft.computecanada.ca/easybuild/sources/p/Python/extensions/trove_classifiers-2024.4.10-py3-none-any.whl#sha256=678bd6fcc5218d72e3304e27a608acc9b91e17bd00c3f3d8c968497c843ad98b
+typing_extensions @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/typing_extensions/typing_extensions-4.12.1
+virtualenv @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/virtualenv/virtualenv-20.26.2
+wheel @ file:///tmp/ebuser/avx2/Python/3.12.4/GCCcore-13.3-gentoo/wheel/wheel-0.43.0

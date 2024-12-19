@@ -7,3 +7,10 @@
 /Decoding/fmri-preprocessing/img_bold_arrays/
 /img_bold_arrays/
 .DS_Store
+/bird_data_analysis/results/
+/bird_data_analysis/venv/
+/bird_data_analysis/data/cropped/
+/bird_data_analysis/data/masked_images/
+/bird_data_analysis/data/processed/
+/bird_data_analysis/data/raw_data/
+/bird_data_analysis/fMRI_prep/
