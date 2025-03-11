@@ -19,7 +19,7 @@ original_embeddings_path = Path("/home/jamesmck/projects/def-afyshe-ab/jamesmck/
 output_plot_dir = Path(f"/home/jamesmck/projects/def-afyshe-ab/jamesmck/TC2See/DRAC_code/data/occlusion_violin_plots/violins_size_{patch_size}")
 output_plot_dir.mkdir(exist_ok=True)
 
-# Load CLIP model (use GPU if available)
+# Load CLIP model 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load("ViT-B/32", device=device)
 
@@ -69,9 +69,8 @@ for image_folder in tqdm(embedding_root.iterdir(), desc="Processing Occluded Emb
     # Convert to DataFrame
     df = pd.DataFrame(distance_data)
 
-    # Get the occlusion_id with the largest cosine distance
-    mean_cosine_distance = float(df["Distance"].mean())  # Convert to float
-    std_cosine_distance = float(df["Distance"].std())  # Convert to float
+    mean_cosine_distance = float(df["Distance"].mean())
+    std_cosine_distance = float(df["Distance"].std())  
     max_cosine_distance = df.loc[df["Distance"].idxmax()]
     # Get the occlusion_id of the max cosine distance
     max_cosine_distance_id = float(max_cosine_distance["occlusion_id"])

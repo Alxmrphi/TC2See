@@ -25,7 +25,7 @@ def save_embeddings(embeddings, output_path):
     np.save(output_path, embeddings)
 
 def main():
-    device = "cuda" if torch.cuda.is_available() else "cpu"  # Use GPU if available
+    device = "cuda" if torch.cuda.is_available() else "cpu"  
     model, preprocess = clip.load("ViT-B/32", device=device)
 
     input_folder = Path("/home/jamesmck/projects/def-afyshe-ab/jamesmck/TC2See/DRAC_code/data/cropped")
