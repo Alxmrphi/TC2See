@@ -1,13 +1,5 @@
-/$RECYCLE.BIN/
-/compute_can_tmp/
-/Decoding/bird_data/
-/fmri_processing/data/
-/fmri_processing/results/
-/System Volume Information/
-/Decoding/fmri-preprocessing/img_bold_arrays/
-/img_bold_arrays/
-.DS_Store
-/bird_data_analysis/results/
-/bird_data_analysis/venv/
-/bird_data_analysis/data/
-/bird_data_analysis/fMRI_prep/
+/DRAC_code/results/
+/DRAC_code/venv/
+/DRAC_code/data/
+/DRAC_code/fMRI_prep/fmriprep_23.2.3.sif
+/DRAC_code/fMRI_prep/fmriprep_24.0.0.sif
